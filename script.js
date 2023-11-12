@@ -13,9 +13,19 @@ window.addEventListener("scroll", () => {
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   followFinger: true,
-  grabCursor: true,
-  loop: false,
+  // grabCursor: true,
+  loop: true,
   //   autoplay: {
   //     delay: 3000,
   //   },
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: [0, 0, -400],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
 });
