@@ -10,7 +10,7 @@
   --black: #000;
   --white: #fff;
   --gray: #333;
-  --green: rgb(0, 180, 0);
+  --green: #00b400;
   --secondary_font: "Space Grotesk", sans-serif;
 }
 
@@ -252,7 +252,11 @@ a:visited {
   text-decoration: underline;
 }
 
-/* Mobile styles */
+#mob-nav-btn {
+  color: var(--green);
+}
+
+/* Media Queries */
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
@@ -366,18 +370,18 @@ a:visited {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   left: 0;
-  background-color: #111;
+  backdrop-filter: blur(14px);
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
-  font-size: 25px;
+  font-size: 20px;
   color: var(--white);
   display: block;
   transition: 0.5s;

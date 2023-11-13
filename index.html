@@ -28,6 +28,7 @@
     <title>MOVS</title>
   </head>
   <body>
+    <div id="overlay"></div>
     <section class="main">
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -101,10 +102,14 @@
         </div>
         <div class="mob-nav-right">
           <i class="fa-regular fa-user"></i>
-          <i class="fa-solid fa-bars" id="mob-nav-btn"></i>
+          <i
+            class="fa-solid fa-bars"
+            id="mob-nav-btn"
+            onclick="toggleNav()"
+          ></i>
         </div>
       </div>
-      <div id="Sidenav" class="sidenav">
+      <div id="sidenav" class="sidenav">
         <a href="" onclick=""></a>
         <a href="" onclick="">Home</a>
         <a href="" onclick="">Movies</a>

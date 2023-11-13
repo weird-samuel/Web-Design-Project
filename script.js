@@ -18,12 +18,15 @@ navBtn.addEventListener("click", () => {
   navBtn.classList.toggle("fa-x");
 });
 
-function openNav() {
-  document.getElementById("sidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("sidenav").style.width = "0";
+function toggleNav() {
+  const sidenav = document.getElementById("sidenav");
+  if (sidenav.style.width === "250px") {
+    sidenav.style.width = "0";
+    navBtn.style.color = "#00b400";
+  } else {
+    navBtn.style.color = "white";
+    sidenav.style.width = "250px";
+  }
 }
 
 // swiper js
