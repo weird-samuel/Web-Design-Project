@@ -238,7 +238,7 @@ a:visited {
   width: 100%;
   color: var(--white);
   background: var(--green);
-  z-index: 3;
+  z-index: 2;
   text-align: center;
   padding: 26px 0px;
 }
