@@ -47,31 +47,79 @@
             </div>
             <img src="./images/slider.jpg" alt="slider" />
           </div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">
+            <div class="slider-overlay"></div>
+            <div class="slider-text">
+              <h1>The way of water</h1>
+              <p>Written and directed by kevin lord / german 2023</p>
+              <button type="button" class="btn">
+                <a href="">Add to Watchlist</a>
+              </button>
+            </div>
+            <div class="movie-release">
+              <span class="text">In theater</span>
+              <h3 class="time">July 2023</h3>
+            </div>
+            <img src="./images/slider1.jpg" alt="slider" />
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-overlay"></div>
+            <div class="slider-text">
+              <h1>alice keep walking</h1>
+              <p>Written and directed by jue allissa / USA 2023</p>
+              <button type="button" class="btn">
+                <a href="">Add to Watchlist</a>
+              </button>
+            </div>
+            <div class="movie-release">
+              <span class="text">In theater</span>
+              <h3 class="time">August 2023</h3>
+            </div>
+            <img src="./images/slider2.jpg" alt="slider" />
+          </div>
         </div>
       </div>
       <div class="navbar" id="navbar">
-        <div class="nav-left"><a class="logo">LOGO</a></div>
+        <div class="nav-left">
+          <a class="logo"><span>M</span>OVS</a>
+        </div>
         <div class="nav-center">
           <div class="nav-link">
-            <a href="/">Home</a>
-            <a href="/movies">Movies</a>
-            <a href="about">About</a>
-            <a href="/contact">Contact</a>
+            <a href="/" onclick="">Home</a>
+            <a href="/movies" onclick="">Movies</a>
+            <a href="about" onclick="">About</a>
+            <a href="/contact" onclick="">Contact</a>
           </div>
         </div>
         <div class="nav-right">
           <i class="fa-regular fa-user"></i>
         </div>
       </div>
+      <div class="mob-nav" id="mob-nav">
+        <div class="mob-nav-left">
+          <a class="logo"><span>M</span>OVS</a>
+        </div>
+        <div class="mob-nav-right">
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-bars" id="mob-nav-btn"></i>
+        </div>
+      </div>
+      <div id="Sidenav" class="sidenav">
+        <a href="" onclick=""></a>
+        <a href="" onclick="">Home</a>
+        <a href="" onclick="">Movies</a>
+        <a href="" onclick="">About</a>
+        <a href="" onclick="">Contact</a>
+      </div>
+
       <div class="hero-end">
         <p>
           You can't Decide What Movie to Watch Next?
-          <a href="">see Movie List</a>
+          <a href="">see Movie List.</a>
         </p>
       </div>
     </section>
+    <div style="height: 200vh"></div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script
