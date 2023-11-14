@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/icons/favicon-16x16.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6ac01a0168.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" defer></script>
+    <title>Movies</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <section class="main">
+      <div class="navbar" id="navbar">
+        <div class="nav-left">
+          <a class="logo"><span>M</span>OVS</a>
+        </div>
+        <div class="nav-center">
+          <div class="nav-link">
+            <a href="./index.html" onclick="">Home</a>
+            <a href="./movies.html" onclick="">Movies</a>
+            <a href="about" onclick="">About</a>
+            <a href="/contact" onclick="">Contact</a>
+          </div>
+        </div>
+        <div class="nav-right">
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </div>
+      <div class="mob-nav" id="mob-nav">
+        <div class="mob-nav-left">
+          <a class="logo"><span>M</span>OVS</a>
+        </div>
+        <div class="mob-nav-right">
+          <i class="fa-regular fa-user"></i>
+          <i
+            class="fa-solid fa-bars"
+            id="mob-nav-btn"
+            onclick="toggleNav()"
+          ></i>
+        </div>
+      </div>
+      <div id="sidenav" class="sidenav">
+        <a href="" onclick=""></a>
+        <a href="./index.html" onclick="">Home</a>
+        <a href="./movies.html" onclick="">Movies</a>
+        <a href="" onclick="">About</a>
+        <a href="" onclick="">Contact</a>
+      </div>
+      <img
+        src="./images/movies-hero.jpeg"
+        class="movies-hero"
+        alt="movies-hero"
+      />
+    </section>
+  </body>
+</html>
