@@ -71,6 +71,7 @@ a:visited {
 }
 
 .navbar {
+  width: 100vw;
   position: absolute;
   top: 0%;
   left: 0%;
@@ -252,8 +253,22 @@ a:visited {
   text-decoration: underline;
 }
 
+.mob-nav {
+  display: none;
+}
+
 #mob-nav-btn {
   color: var(--green);
+}
+
+.explore {
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  height: 200vh;
+  background: var(--white);
+  color: var(--black);
+  padding-top: 100px;
 }
 
 /* Media Queries */
@@ -318,12 +333,12 @@ a:visited {
     }
 
     .swiper img {
-      object-position: lef;
+      object-position: left;
     }
   }
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 800px) {
   .navbar {
     display: none;
   }
@@ -354,6 +369,10 @@ a:visited {
     display: flex;
     justify-content: space-between;
   }
+
+  .swiper img {
+    object-position: 55% center;
+  }
 }
 
 /* nav style for js, leave at bottom always*/
@@ -373,8 +392,10 @@ a:visited {
   z-index: 100;
   top: 0;
   left: 0;
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
+  /* -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px); */
+  background: var(--black);
+  opacity: 0.8;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 1s;
