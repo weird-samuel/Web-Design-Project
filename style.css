@@ -532,8 +532,91 @@ footer {
   transform: translateY(-5px);
 }
 
+.contact-form-box {
+  background-color: var(--white);
+}
+
+.contact-form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 45%;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+}
+
+.form-group input {
+  padding: 10px 2px 2px;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  border-radius: 3px;
+  border-bottom: 3px solid;
+  border-color: var(--gray);
+  font-size: 20px;
+  color: var(--black);
+}
+
+.form-group textarea:focus,
+.form-group input:focus {
+  outline: none;
+}
+
+.form-group textarea.is-invalid,
+.form-group input.is-invalid {
+  border-color: red;
+}
+
+.form-group.form-area {
+  width: 100%;
+}
+
+.form-group textarea {
+  padding: 7px;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 0;
+  border-bottom: 3px solid var(--gray);
+  font-size: 20px;
+  resize: none;
+  color: var(--black);
+}
+
+.contact-form form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--green);
+  color: white;
+  cursor: pointer;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
+  .join-form form {
+    display: block;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
   body {
     font-size: 14px;
   }
