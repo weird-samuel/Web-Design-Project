@@ -657,7 +657,7 @@ footer {
   }
 }
 
-/* nav style for js, leave at bottom always*/
+/* nav style for js,  leave at bottom always*/
 .nav-bg {
   background: var(--black);
   position: fixed;
