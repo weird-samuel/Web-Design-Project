@@ -8,6 +8,7 @@
 
 :root {
   --black: #000;
+  --black2: #131313;
   --white: #fff;
   --gray: #333;
   --green: #00b400;
@@ -455,6 +456,82 @@ a:visited {
   font-weight: bold;
 }
 
+footer {
+  width: 100vw;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content {
+  width: 85%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.copy-note {
+  background: var(--black2);
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.copy-note p {
+  width: 100vw;
+  font-size: 1rem;
+  line-height: 2.4em;
+  font-family: var(--secondary_font);
+}
+
+.footer-top {
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--gray);
+  display: flex;
+}
+
+.t-c-socials {
+  width: 35%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.t-c a,
+.t-c-socials a {
+  transition: 0.5s ease;
+}
+
+.t-c a:hover,
+.t-c-socials a:hover {
+  color: var(--green);
+}
+
+.socials {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials a {
+  background: var(--black2);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+.socials a:hover {
+  transform: translateY(-5px);
+}
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   body {
@@ -562,6 +639,21 @@ a:visited {
 
   .swiper img {
     object-position: 55% center;
+  }
+
+  .footer-top {
+    display: block;
+  }
+
+  .t-c-socials {
+    display: inline;
+    padding: 10px;
+  }
+
+  .socials {
+    width: 50%;
+    margin: auto;
+    display: block;
   }
 }
 
