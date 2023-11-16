@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./images/icons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/icons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./images/icons/favicon-16x16.png"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/6ac01a0168.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="./script.js" defer></script>
+		<title>Contact</title>
+	</head>
+	<body>
+		<div id="overlay"></div>
+		<section class="main">
+			<div class="navbar" id="navbar">
+				<div class="nav-left">
+					<a class="logo"><span>M</span>OVS</a>
+				</div>
+				<div class="nav-center">
+					<div class="nav-link">
+						<a href="./index.html" onclick="">Home</a>
+						<a href="./movies.html" onclick="">Movies</a>
+						<a href="./about.html" onclick="">About</a>
+						<a href="./contact.html" onclick="">Contact</a>
+					</div>
+				</div>
+				<div class="nav-right">
+					<i class="fa-regular fa-user"></i>
+				</div>
+			</div>
+			<div class="mob-nav" id="mob-nav">
+				<div class="mob-nav-left">
+					<a class="logo"><span>M</span>OVS</a>
+				</div>
+				<div class="mob-nav-right">
+					<i class="fa-regular fa-user"></i>
+					<i
+						class="fa-solid fa-bars"
+						id="mob-nav-btn"
+						onclick="toggleNav()"
+					></i>
+				</div>
+			</div>
+			<div id="sidenav" class="sidenav">
+				<a href="" onclick=""></a>
+				<a href="./index.html" onclick="">Home</a>
+				<a href="./movies.html" onclick="">Movies</a>
+				<a href="./about.html" onclick="">About</a>
+				<a href="./contact.html" onclick="">Contact</a>
+			</div>
+			<section class="m-hero">
+				<div class="m-h-overlay"></div>
+				<article class="m-h-text">
+					<h1>All Movies</h1>
+				</article>
+			</section>
+			<div class="m-hero-after"></div>
+			<section class="m-all">
+				<section class="explore">
+					<div class="explore-head">
+						<div class="explore-head-left">
+							<i class="fa-solid fa-film"></i>
+							<p>Contact us</p>
+							<h2>Feel Free to Write us Anytime</h2>
+						</div>
+					</div>
+					<div class="contact-form">
+						<form id="form-to-submit" data-subject="Contact Us Form">
+							<div class="form-group">
+								<label for="first-name">First Name:</label>
+								<input
+									type="text"
+									id="first-name"
+									name="first-name"
+									placeholder="Your Name"
+								/>
+							</div>
+							<div class="form-group">
+								<label for="subject">Subject:</label>
+								<input
+									type="subject"
+									id="subject"
+									name="subject"
+									placeholder="subject"
+								/>
+							</div>
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									placeholder="Email Address"
+								/>
+							</div>
+							<div class="form-group">
+								<label for="phone">Phone:</label>
+								<input
+									type="number"
+									id="phone"
+									name="phone"
+									maxlength="11"
+									placeholder="phone"
+								/>
+							</div>
+							<div class="form-group form-area">
+								<label for="message">Message:</label>
+								<textarea
+									id="message"
+									name="message"
+									placeholder="Write a comment"
+								></textarea>
+							</div>
+							<button type="submit" id="submit-form">Submit</button>
+						</form>
+					</div>
+				</section>
+			</section>
+		</section>
+		<footer>
+			<div class="footer-content">
+				<div class="footer-top">
+					<a class="logo"><span>M</span>OVS</a>
+					<div class="t-c-socials">
+						<div class="t-c">
+							<p><a>Help</a> / <a>Privacy policy</a></p>
+						</div>
+						<div class="socials">
+							<a><i class="fa-brands fa-x-twitter"></i></a>
+							<a><i class="fa-brands fa-facebook"></i></a>
+							<a><i class="fa-brands fa-pinterest"></i></a>
+							<a><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div>
+						<h3>Buy movie tickets easily with Aovis system nationwide</h3>
+						<button>Get your tickets</button>
+					</div>
+					<div>
+						<h4>Movies</h4>
+						<p>Action</p>
+						<p>Adventure</p>
+						<p>Animation</p>
+						<p>Comedy</p>
+						<p>Crime</p>
+					</div>
+					<div>
+						<h4>Links</h4>
+						<p>About</p>
+						<p>My account</p>
+						<p>News</p>
+						<p>Latest events</p>
+						<p>Contact</p>
+					</div>
+					<div>
+						<h4>Newsletter</h4>
+						<p>Subscribe to Mov newsletter this very day.</p>
+						<input type="text" placeholder="Email address" />
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="copy-note">© Copyright 2023, MOVS</div>
+	</body>
+</html>
